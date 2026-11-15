@@ -17,17 +17,17 @@
 *{box-sizing:border-box}
 html{font-size:1.25vw;background:#0b1220;overflow:hidden}
 body{margin:0;overflow:hidden;height:100vh;color:#eef3fb;background:#0b1220;
-  font-family:"PingFang SC","HarmonyOS Sans SC","MiSans","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",system-ui,sans-serif;
+  font-family:ui-rounded,"SF Pro Rounded","Hiragino Maru Gothic ProN","PingFang SC","HarmonyOS Sans SC","MiSans","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",system-ui,sans-serif;
   -webkit-font-smoothing:antialiased;cursor:none}
 h1,h2,h3,p{margin:0}
 .bg{position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;
-  background:radial-gradient(60rem 30rem at 85% -10%,rgba(47,134,224,.22),transparent 70%),radial-gradient(50rem 30rem at -10% 110%,rgba(160,91,216,.16),transparent 70%),#0b1220}
+  background:radial-gradient(60rem 30rem at 85% -10%,rgba(255,107,122,.16),transparent 70%),radial-gradient(50rem 30rem at -10% 110%,rgba(78,196,255,.14),transparent 70%),#0b1220}
 
 /* ---------- 顶栏 ---------- */
 .top{position:fixed;top:0;left:0;right:0;height:5rem;padding:0 3.5rem;display:flex;align-items:center;z-index:5;
   background:linear-gradient(#0b1220 55%,rgba(11,18,32,0))}
 .logo{display:flex;align-items:center}
-.logo i{width:2.3rem;height:2.3rem;border-radius:.7rem;background:linear-gradient(135deg,#2f9cf0,#6b6ff0);display:flex;align-items:center;justify-content:center;margin-right:.75rem;font-style:normal;font-size:1.05rem;padding-left:.15rem}
+.logo i{width:2.3rem;height:2.3rem;border-radius:.85rem;background:linear-gradient(135deg,#ffd93d,#ff6b7a);color:#5a2a00;display:flex;align-items:center;justify-content:center;margin-right:.75rem;font-style:normal;font-size:1.15rem;padding-left:0}
 .logo b{font-size:1.45rem;font-weight:800;letter-spacing:.02rem}
 .logo span{margin-left:1rem;color:#93a3bb;font-size:1rem}
 .top-r{margin-left:auto;display:flex;align-items:center;color:#c9d4e5;font-size:1.05rem}
@@ -44,7 +44,7 @@ h1,h2,h3,p{margin:0}
 
 /* 豆腐块：左边一块大的「继续闯关」，右边 5×2 小方块（9 关 + 随便看看） */
 .metro{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:8.6rem 8.6rem;grid-gap:1.1rem}
-.tile{position:relative;border-radius:1rem;transition:transform .2s ease;will-change:transform}
+.tile{position:relative;border-radius:1.2rem;transition:transform .2s ease;will-change:transform}
 /* 焦点：放大 + 白框。用 box-shadow 画框，方块自己的 overflow:hidden 裁不到它 */
 .tile.f{transform:scale(1.07);z-index:3;box-shadow:0 0 0 .25rem #fff,0 .9rem 2.2rem rgba(0,0,0,.55)}
 .big{grid-column:1 / span 2;grid-row:1 / span 2;overflow:hidden;background:#1b2638}
@@ -132,7 +132,7 @@ h1,h2,h3,p{margin:0}
 <body>
 <div class="bg"></div>
 <header class="top">
-  <div class="logo"><i>▶</i><b>宝宝英语乐园</b><span id="sub"></span></div>
+  <div class="logo"><i>🎵</i><b>宝宝英语乐园</b><span id="sub"></span></div>
   <div class="top-r"><span class="prog" id="prog"></span><span class="clock" id="clock"></span></div>
 </header>
 <main class="home" id="home"></main>
